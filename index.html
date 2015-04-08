@@ -130,7 +130,7 @@ La firma digital asegura:
 <section data-markdown>
 ###A nivel técnico
 
-La firma digital necesita un *par de claves* criptográficos, la clave privada y la clave pública.
+La firma digital necesita un *par de claves* criptográficos: la clave privada y la clave pública.
 
 La clave privada realiza la firma digital, a partir de un "hash" del documento digital.
 
@@ -148,8 +148,25 @@ La firma digital implica algunas precauciones:
 
 * conservación de los documentos firmados, que solo existen en el mundo digital:
 
-  * facilidad de replicación multiple
-  * *pero* riesgo alto de perdida
+  * facilidad de replicación múltiple
+  * *pero* alto riesgo de perdida
+</section>
+
+<section data-markdown>
+###Infraestructura de Clave Pública
+
+Para asegurar la identidad del posesor de una clave pública y de las firmas digitales correspondientes, la Infraestructura de Clave Pública provee un mecanismo de tercer de confianza.
+
+La entidad certificadora verifica cuidadosamente la identidad del posesor de una clave pública, y emite un **certificado digital** que asocia de manera infalsificable la clave pública y la identidad del signatario. Quién confía en la entidad certificadora confía en todas las firmas digitales realizadas con un certificado digital que emitió.
+</section>
+
+<section data-markdown>
+</section>
+
+<section data-markdown>
+</section>
+
+<section data-markdown>
 </section>
 
 <section data-markdown>
