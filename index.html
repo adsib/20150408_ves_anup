@@ -90,7 +90,7 @@ En su parte técnica, provee los siguientes servicios:
 <section data-markdown>
 ### ¿Qué es la firma digital?
 
-Es un número calculado por criptografía, por ejemplo:
+Es un número calculado por criptografía a partir del contenido del archivo digital. Por ejemplo:
 
 ```
 iQIcBAEBCAAGBQJU6UamAAoJEMZwSKNoagIrEv8QAIqXg9ET85CNSpGMBvVDbcP/
@@ -101,7 +101,7 @@ YmWADd/rdAetDksMgyOi
 ```
 
 * equivalente de la firma manual, para documentos digitales
-* **NO SE VE** -> un documento impreso no lleva la firma digital.
+* **no se ve**: un documento impreso no lleva la firma digital
 * la firma digital solo tiene una existencia en el *mundo digital*
 </section>
 
@@ -128,9 +128,28 @@ La firma digital asegura:
 </section>
 
 <section data-markdown>
+###A nivel técnico
+
+La firma digital necesita un *par de claves* criptográficos, la clave privada y la clave pública.
+
+La clave privada realiza la firma digital, a partir de un "hash" del documento digital.
+
+La firma digital se distribuye con la clave pública, que permite verificar la firma.
 </section>
 
 <section data-markdown>
+###Seguridad
+
+La firma digital implica algunas precauciones:
+
+* secreto absoluto del signatario sobre su clave privada:
+
+  * se recomienda el uso de un token USB
+
+* conservación de los documentos firmados, que solo existen en el mundo digital:
+
+  * facilidad de replicación multiple
+  * *pero* riesgo alto de perdida
 </section>
 
 <section data-markdown>
