@@ -157,10 +157,19 @@ La firma digital implica algunas precauciones:
 
 Para asegurar la identidad del posesor de una clave pública y de las firmas digitales correspondientes, la Infraestructura de Clave Pública provee un mecanismo de tercer de confianza.
 
-La entidad certificadora verifica cuidadosamente la identidad del posesor de una clave pública, y emite un **certificado digital** que asocia de manera infalsificable la clave pública y la identidad del signatario. Quién confía en la entidad certificadora confía en todas las firmas digitales realizadas con un certificado digital que emitió.
+La entidad certificadora verifica cuidadosamente la identidad del posesor de una clave pública, y emite un **certificado digital** que asocia de manera infalsificable la clave pública y la identidad del signatario. Quién confía en la entidad certificadora confía en todas las firmas digitales realizadas con este certificado digital.
 </section>
 
 <section data-markdown>
+###Infraestructura de Clave Pública
+
+Una Infraestructura de Clave Pública tiene una organización jerárquica, con:
+
+* una entidad certificadora raíz, con certificado auto-firmado
+* una o varias entidades certificadoras de segundo nivel
+* (opcional) una o varias entidades certificadoras de tercer nivel, cuarto nivel...
+* (opcional) una o varias autoridades de registro
+* los signatarios, que adquieren los certificados
 </section>
 
 <section data-markdown>
